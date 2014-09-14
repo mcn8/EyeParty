@@ -27,19 +27,12 @@ float noise = 0;
     controller = [[LeapController alloc] init];
     [controller addListener:self];
     
-
-
-    
     self.microphone = [EZMicrophone microphoneWithDelegate:self];
     [self.microphone startFetchingAudio];
     
-    //CGGammaValue table[] = {1, 0};
     CGGammaValue red = 0.5;
     CGGammaValue green = 0.5;
     CGGammaValue blue = 0.5;
-    bool redNeg = false;
-    bool greenNeg = false;
-    bool blueNeg = false;
     
     
     while(true){
